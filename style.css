@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/* Navigation bar */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: auto;
+}
+.nav-icon{
+    display: flex;
+}
+.nav-icon a img{
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    color: #2c2c2c;
+    transition: all .42s ease;
+}
+.nav-icon a img:hover{
+    transform: scale(1.5);
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu a{
+    color: #2c2c2c;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-menu a:hover {
+    color: #0097B2;
+}
+
+/* Hero Page */
+.hero-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Landing\ Page\ model.jpg);
+    background-position: left;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-txt h5{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #0097B2;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-txt h1 {
+    color: #000;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+.main-txt p{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-button {
+    width: 145px;
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    top: 72%;
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px ;
+    transition: all .42s ease;
+}
+.main-button:hover{
+    background-color: #000;
+    color: #fff;
+}
