@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/* Navigation bar */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0/10%);
+}
+.logo{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: auto;
+}
+.nav-icon{
+    display: flex;
+}
+.nav-icon a img{
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    color: #2c2c2c;
+    transition: all .42s ease;
+}
+.nav-icon a img:hover{
+    transform: scale(1.5);
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu a{
+    color: #2c2c2c;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-menu a:hover {
+    color: #0097B2;
+}
+
+/* Hero Page */
+.hero-page{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Landing\ Page\ model.jpg);
+    background-position: left;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+}
+.main-txt h5{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: #0097B2;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.main-txt h1 {
+    color: #000;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
+.main-txt p{
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.main-button {
+    width: 145px;
+    height: 50px;
+    position: absolute;
+    left: 10%;
+    top: 72%;
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px ;
+    transition: all .42s ease;
+}
+.main-button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+.down i:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: all .42s ease;
+}
+/* Trending */
+.center-text h2{
+    color: #111;
+    font-size: 28px;
+    text-transform: capitalize;
+    margin: 30px;
+    text-align: center;
+}
+.center-text span{
+    color: #0097B2;
+}
+.products{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    margin: 0 50px;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 300px;
+    height: 400px;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #0097B2;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: red;
+}
+.rating i{
+    color: #0097B2;
+    font-size: 18px;
+}
+.price h4{
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.price p{
+    color: #151515;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Client Reviews */
+.reviews{
+    margin: 30px;
+    padding: 15px;
+    background-color: #f3f4f6;
+}
+.reviews h3{
+    margin-top: 50px;
+    color: #111;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.reviews img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+.reviews p{
+    color: #707070;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.reviews h2{
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
