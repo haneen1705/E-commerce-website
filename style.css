@@ -8,6 +8,7 @@
     list-style: none;
     text-decoration: none;
 }
+
 /* Navigation bar */
 header{
     position: fixed;
@@ -47,12 +48,12 @@ header.sticky{
 .nav-menu {
     display: flex;
 }
-.nav-menu a{
+.nav-menu li a{
     color: #2c2c2c;
     font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
-    font-weight: 400;
+    font-weight: 500;
     transition: all .42s ease;
 }
 .nav-menu a:hover {
@@ -72,7 +73,7 @@ header.sticky{
 }
 .main-txt h5{
     position: absolute;
-    top: 40%;
+    top: 43%;
     left: 10%;
     color: #0097B2;
     font-size: 16px;
@@ -92,23 +93,25 @@ header.sticky{
 }
 .main-txt p{
     position: absolute;
-    left: 10%;
+    left: 11%;
     top: 65%;
     color: #333c56;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
+    text-transform: capitalize;
 }
 .main-button {
-    width: 145px;
+    width: 200px;
     height: 50px;
     position: absolute;
-    left: 10%;
+    left: 12%;
     top: 72%;
     display: inline-block;
     color: #111;
     font-size: 16px;
     font-weight: 500;
+    text-align: center;
     text-transform: capitalize;
     border: 2px solid #111;
     padding: 12px 25px ;
@@ -135,6 +138,8 @@ header.sticky{
     color: #fff;
     transition: all .42s ease;
 }
+
+
 /* Trending */
 .center-text h2{
     color: #111;
@@ -178,7 +183,7 @@ header.sticky{
 }
 .heart-icon{
     position: absolute;
-    right: 0;
+    right: 15px;
     font-size: 20px;
 }
 .heart-icon:hover{
@@ -221,6 +226,7 @@ header.sticky{
     margin: 30px 0;
 }
 .reviews p{
+    width: 55%;
     color: #707070;
     font-size: 16px;
     line-height: 25px;
@@ -232,4 +238,155 @@ header.sticky{
     font-weight: 400;
     text-transform: capitalize;
     margin-bottom: 10px;
+}
+
+
+/* New Updates Section */
+.Up-center-text h2{
+    text-align: center;
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.cart img{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+.update-cart{
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    margin: 0 200px;
+}
+.cart h5{
+    color: #636872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.cart h4{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}   
+.cart p{
+    color: #707070;
+    font-size: 11px;
+    max-width: 275px;
+    line-height: 23px;
+    margin-bottom: 5px;
+}
+.cart h6{
+    color: #151515;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+
+/* Contact Us */
+.Contact{
+    background-color: #f3f4f6;
+    padding: 30px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, auto));
+    gap: 3rem;
+}
+.first-info img{
+    width: 300px;
+    height: auto;
+    margin-right: 20%;
+}
+.first-info p{
+    width: 75%;
+    margin-left: 8%;
+}
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact-info p{
+    color: #565656;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: all .42s;
+}
+.contact-info p:hover{
+    color: #0097B2;
+}
+.social-media i{
+    color: #565656;
+    
+    font-size: 20px;
+    transition: all .42s;
+    margin-top: 15px;
+    margin-left: 7%;
+}
+.social-media i:hover{
+    transform: scale(1,2);
+    color: #0097B2;
+}
+.end-text{
+    background-color:#0097B2;
+    text-align: center;
+    padding: 5px;
+}
+.end-text p{
+    color: #fff;
+    font-size: x-small;
+    text-transform: capitalize;
+}
+
+
+/* Responsive Css */
+@media(max-width:890px){
+    header{
+        padding: 20px  3%;
+        transition: .4s;
+    }
+}
+@media(max-width:640px){
+    .main-txt h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+    .main-txt p{
+        font-size: 18px;
+        transition: .4s;
+    }
+    .main-button{
+        padding: 10px  20px;
+        transition: .4s;
+    }
+}
+@media(max-width:750px){
+    .nav-menu{
+        position: absolute;
+        top: 100%;
+        right: 100%;
+        width: 300px;
+        height: 130vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px  30px;
+        transition: all .42;
+        color: #0097B2;
+    }
+    .nav-menu a{
+        display: block;
+        margin: 18px  0;
+    }
 }
