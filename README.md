@@ -1,4 +1,4 @@
-## This Project was made for Web Programming Sections\
+## This Project was made for Web Programming Sections
 ### TA: Eng. Mohammed Saad
 
 #### Project was made by a team of three memebers:
